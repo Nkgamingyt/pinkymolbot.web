@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pinky Mol is a cozy all-in-one Discord bot for moderation, music, games, welcome systems, tickets, leveling, AI chat, automod, and server protection." />
+  <title>Pinky Mol - Discord Bot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Pinky Mol home">
+      <span class="brand-mark">PM</span>
+      <span>Pinky Mol</span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#features">Features</a>
+      <a href="#commands">Commands</a>
+      <a href="#setup">Setup</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="nav-button" href="https://discord.com/oauth2/authorize?client_id=1510659563341217893&permissions=8&integration_type=0&scope=bot+applications.commands">Invite</a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">All-in-one Discord companion</p>
+        <h1>Pinky Mol</h1>
+        <p class="hero-text">A mallu kerala cute, cozy, powerful young girl bot developed by neethuzz for communities that want soft vibes and serious server tools in one place.</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="https://discord.com/oauth2/authorize?client_id=1510659563341217893&permissions=8&integration_type=0&scope=bot+applications.commands">Invite Pinky Mol</a>
+          <a class="secondary-button" href="https://discord.gg/3bfBE76NpJ">Support Server</a>
+        </div>
+      </div>
+
+      <div class="bot-preview" aria-label="Discord bot preview">
+        <img class="mascot-image" src="assets/pinky-mol-mascot.png" alt="Pinky Mol mascot illustration" />
+        <div class="preview-top">
+          <div class="avatar">PM</div>
+          <div>
+            <strong>Pinky Mol</strong>
+            <span>online - caring for your server</span>
+          </div>
+        </div>
+        <div class="chat-card pink">
+          <span>>help</span>
+          <p>For search all commands and futures.</p>
+        </div>
+        <div class="chat-card cream">
+          <span>Ai conversation setup </span>
+          <p>AI powered discord bot. search anything you want to know.</p>
+        </div>
+        <div class="mini-grid">
+          <div><strong>200+</strong><span>commands</span></div>
+          <div><strong>12+</strong><span>games</span></div>
+          <div><strong>300+</strong><span>members</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-strip" aria-label="Bot highlights">
+      <div><strong>Moderation</strong><span>Ban, kick, mute, warn, purge, lock, roles</span></div>
+      <div><strong>Community</strong><span>Welcome, verification, tickets, join DM, autorole</span></div>
+      <div><strong>Fun</strong><span>games, ai chat, giveaways, leveling</span></div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="section-heading">
+        <p class="eyebrow">Feature Systems</p>
+        <h2>Everything Pinky Mol can help with</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-icon">S</span>
+          <h3>Server Safety</h3>
+          <p>Antinuke protection, whitelist controls, emergency restore, automod filters, ignored channels, and punishment settings.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">M</span>
+          <h3>Moderation Tools</h3>
+          <p>Ban, unban, kick, timeout, unmute, warn, clear warns, purge, slowmode, nuke, clone, hide, lock, role tools, and audit helpers.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">C</span>
+          <h3>Community Setup</h3>
+          <p>Welcome messages, verification panels, tickets, J2C system, sticky messages, autoroles, reaction roles, vanity roles, and custom roles.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">A</span>
+          <h3>AI & Utility</h3>
+          <p>AI chat triggers, translate, calculator, maps, YouTube search, media tools, message stats, and server info.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">G</span>
+          <h3>Games & Fun</h3>
+          <p>Blackjack, slots, Wordle, chess, battleship, 2048, tic-tac-toe, RPS, memory game, country guesser, fun rates, hugs, kisses, and roasts.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">V</span>
+          <h3>Voice & Music</h3>
+          <p>Play, pause, queue, loop, shuffle, volume, now playing, voice lock, move, pull, mute, deafen, private, and temporary voice channels.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section command-section" id="commands">
+      <div class="section-heading">
+        <p class="eyebrow">Command Menu</p>
+        <h2>Search Pinky Mol commands</h2>
+      </div>
+      <div class="command-toolbar">
+        <input id="commandSearch" type="search" placeholder="Search command or category" aria-label="Search commands" />
+        <div class="tabs" role="list" aria-label="Command categories">
+          <button class="tab active" data-filter="all">All</button>
+          <button class="tab" data-filter="moderation">Moderation</button>
+          <button class="tab" data-filter="community">Community</button>
+          <button class="tab" data-filter="fun">Fun</button>
+          <button class="tab" data-filter="music">Music</button>
+          <button class="tab" data-filter="utility">Utility</button>
+        </div>
+      </div>
+      <div class="command-list" id="commandList">
+        <article class="command-card" data-category="moderation"><h3>ban</h3><p>Ban a user with an optional reason.</p></article>
+        <article class="command-card" data-category="moderation"><h3>kick</h3><p>Kick a member from the server.</p></article>
+        <article class="command-card" data-category="moderation"><h3>mute / timeout</h3><p>Timeout a member, then unmute when needed.</p></article>
+        <article class="command-card" data-category="moderation"><h3>warn / clearwarns</h3><p>Warn members and clear their warning history.</p></article>
+        <article class="command-card" data-category="moderation"><h3>lock / unlock</h3><p>Lock or unlock channels for crowd control.</p></article>
+        <article class="command-card" data-category="moderation"><h3>role / removerole</h3><p>Add, remove, create, rename, delete, and bulk manage roles.</p></article>
+        <article class="command-card" data-category="moderation"><h3>automod</h3><p>Manage anti-link, anti-spam, anti-caps, invite, mention, and emoji filters.</p></article>
+        <article class="command-card" data-category="moderation"><h3>antinuke</h3><p>Protect against bans, kicks, webhooks, role edits, channel edits, bot adds, and more.</p></article>
+
+        <article class="command-card" data-category="community"><h3>greet</h3><p>Setup, edit, test, channel, reset, config, and auto-delete welcome messages.</p></article>
+        <article class="command-card" data-category="community"><h3>verification</h3><p>Create verification panels, logs, status, reset, and manual verification.</p></article>
+        <article class="command-card" data-category="community"><h3>ticket</h3><p>Run a ticket support system for members.</p></article>
+        <article class="command-card" data-category="community"><h3>reactionroles</h3><p>Create reaction role and DM reaction role panels.</p></article>
+        <article class="command-card" data-category="community"><h3>autorole</h3><p>Automatically assign roles when members join.</p></article>
+        <article class="command-card" data-category="community"><h3>joindm</h3><p>Send direct messages to new members.</p></article>
+        <article class="command-card" data-category="community"><h3>j2c</h3><p>Setup and reset join-to-create voice channels.</p></article>
+        <article class="command-card" data-category="community"><h3>invites</h3><p>Track invites, leaderboards, invite logs, resets, and manual invite counts.</p></article>
+
+        <article class="command-card" data-category="music"><h3>play</h3><p>Play a song in voice chat.</p></article>
+        <article class="command-card" data-category="music"><h3>queue</h3><p>Show the current song queue.</p></article>
+        <article class="command-card" data-category="music"><h3>pause / resume</h3><p>Pause and resume the current track.</p></article>
+        <article class="command-card" data-category="music"><h3>skip / stop</h3><p>Skip a track or stop playback.</p></article>
+        <article class="command-card" data-category="music"><h3>loop / shuffle</h3><p>Loop music or shuffle the queue.</p></article>
+        <article class="command-card" data-category="music"><h3>volume / seek</h3><p>Control volume and jump through a track.</p></article>
+
+        <article class="command-card" data-category="fun"><h3>blackjack / slots</h3><p>Casino-style mini games.</p></article>
+        <article class="command-card" data-category="fun"><h3>wordle / 2048</h3><p>Button-based puzzle games.</p></article>
+        <article class="command-card" data-category="fun"><h3>chess / battleship</h3><p>Longer strategy games for friends.</p></article>
+        <article class="command-card" data-category="fun"><h3>rps / tic-tac-toe</h3><p>Quick games inside Discord.</p></article>
+        <article class="command-card" data-category="fun"><h3>hug / kiss / pat / slap</h3><p>Social fun commands for members.</p></article>
+        <article class="command-card" data-category="fun"><h3>8ball / dice / coinflip</h3><p>Fast randomizer commands.</p></article>
+        <article class="command-card" data-category="fun"><h3>giveaway</h3><p>Start, list, end, and reroll giveaways.</p></article>
+        <article class="command-card" data-category="fun"><h3>birthday</h3><p>Set, remove, list, and check birthdays.</p></article>
+
+        <article class="command-card" data-category="utility"><h3>ai conversation</h3><p>AI chat text based bot for specific chat channel.</p></article>
+        <article class="command-card" data-category="utility"><h3>translate / hinglish</h3><p>Translate messages and convert Hinglish text.</p></article>
+        <article class="command-card" data-category="utility"><h3>serverinfo / userinfo</h3><p>Show server and member details.</p></article>
+        <article class="command-card" data-category="utility"><h3>qr / calculator / map</h3><p>Useful quick tools for daily server life.</p></article>
+        <article class="command-card" data-category="utility"><h3>level</h3><p>Show member level and XP progress.</p></article>
+        <article class="command-card" data-category="utility"><h3>minecraft / yt</h3><p>Minecraft server tools and YouTube search.</p></article>
+      </div>
+    </section>
+
+    <section class="section split" id="setup">
+      <div>
+        <p class="eyebrow">Neethuz Pinky mol</p>
+        <h2>WHO IS PINKY ACTUALLY ?</h2>
+        <p>Meet Pinky Mol, the Discord bot designed to bring a smile to your face and a helping hand whenever you need it. Created by .neethuzz., Pinky Mol is a highly advanced bot that offers a wide range of features, including moderation, entertainment, games, AI capabilities, and utilities.
+With Pinky Mol, you'll never be lonely or lost in the vast world of Discord. Whether you need help with a complex problem, want to play a game, or just want to chat with a friendly bot, Pinky Mol is here for you..</p>
+      </div>
+      <ol class="steps">
+        <li><strong>Key Features:Pinky Mol offers a variety of features to suit your needs. From playing games and listening to music, to using advanced AI capabilities and powerful moderation tools, I've got you covered. Whether you're looking for productivity and organization or just want to have some fun, pinky mol to help.
+</li>
+      </ol>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="section-heading">
+        <p class="eyebrow">Discord</p>
+        <h2>Terms of Service and Privacy Policy</h2>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>Terms of Service</summary>
+          <p>Link : https://nkgamingyt.github.io/pinkmol-terms.github.io/</p>
+        </details>
+        <details>
+          <summary>Privacy Policy</summary>
+          <p>Link : https://nkgamingyt.github.io/pinkmol-privacy.github.io/</p>
+        </details>
+        <details>
+          <summary>Dev's community server</summary>
+          <p>Link : https://discord.gg/3bfBE76NpJ</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <strong>Pinky Mol</strong>
+    <span>A mallu young girl bot.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
